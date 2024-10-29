@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0 0; 
+    font-family: "Rubik", sans-serif;
+    background-color: #4333c4;
+}
+
+/* topo do site */
+html{
+    scroll-behavior: smooth;  /*rolagem suavel*/
+}
+
+.imagem{
+    width: 100%;
+     height: 100vh;
+     z-index: -3;
+     position: relative;
+}
+
+.comeco-do-site .logo{
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 50px;
+    font-size: 40px;
+    color: #61c806;
+    font-weight: 600;
+    padding: 20px 2%;
+}
+
+.comeco-do-site h2{
+    position: absolute;
+    top: 200px;
+    left: 12%;
+    font-size: 65px;
+    color: #61c806;
+    padding: 20px 2%;
+}
+
+.comeco-do-site h2 span{
+    color: #ffffff49;
+}
+
+.comeco-do-site p{
+    position: absolute; 
+    top: 410px;
+    left: 10%;
+    font-size: 25px;
+    color: #ffffffb6;
+    padding: 20px 2%;
+}
+
+.comeco-do-site ul{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    left: 800px;
+    list-style-type: none;
+    
+}
+
+.comeco-do-site ul li a{
+    color: #ffffff80;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.comeco-do-site ul li a:hover{
+    color: #ffffff;
+}
+
+/* icones */
+
+.icones ul{
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    font-size: 30px;
+    left: 10px;
+}
+
+.icones ul a{
+    color: #ffffff8a;
+    padding: 0 10px;
+}
+
+.icones ul a:hover{
+    transform: scale(1.10);
+}
+
+/* habilidades */
+
+.habilidades{
+    background-color: #4333c4;
+    width: 100%;
+     height: 100vh;
+
+}
+
+.habilidades h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 35px;
+    color: #ffffffda;
+}
+
+.pagina-card{
+    position: absolute;
+    width: 85%;
+    display: flex;
+    left: 6%;
+    align-items: center;
+    justify-content: center;
+} 
+
+.cardA{
+    width: 70vh;
+    background-color: #2f2196bb;
+    height: 420px;
+    margin: 10px;
+    padding: 20px 2%;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #ffffff50;
+    animation: cima 1.0s ease-out;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(45%); /* Posição inicial fora da tela */
+    transition: opacity 1.0s, transform 0.6s ease-out; /* Transição suave */
+}
+
+.cardB{
+    width: 70vh;
+    background-color: #2f2196bb;
+    height: 420px;
+    margin: 10px;
+    padding: 20px 2%;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #ffffff50;
+    animation: cima 1.0s ease-out;
+    opacity: 0; /* Começa invisível */
+    transform: translateX(45%); /* Posição inicial fora da tela */
+    transition: opacity 1.0s, transform 0.6s ease-out; /* Transição suave */
+}
+
+.slide-up /* variavel que guarda a função*/{
+    opacity: 1; /* Fica visível */
+    transform: translateY(0); /* Move para a posição original */
+}
+
+.cardA i{
+    font-size: 50px;
+    color:rgba(255, 255, 255, 0.712) ;
+    position: relative;
+    bottom: -15px;
+}
+
+.cardB i{
+    font-size: 50px;
+    color:rgba(255, 255, 255, 0.822) ;
+    position: relative;
+    bottom: -15px;
+}
+
+.pagina-card p{
+    color: #ffffffa9;
+    position: relative;
+    bottom: -30px;
+    font-size: 20px; 
+    text-align: left;
+} 
+
+.pagina-card h2{
+    position: relative;
+    bottom: -30px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+
+/* sobre mim */
+.EU{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.geral-eu{
+    display: flex;
+    align-items: center;
+}
+
+.geral-eu img{
+    height: 500px;
+    max-width: 1500px; /* Define a largura máxima da imagem */
+    margin-right: 1px; /* Espaçamento entre a imagem e o texto */
+    padding: 60px 12%;
+}
+
+.geral-eu h2{
+    font-size: 50px;
+    color: #fff;
+}
+
+.mensagens{
+    display: block;
+}
+
+.geral-eu h2 span{
+    color: #61c806;
+}
+
+.geral-euA i{
+    display: block;
+}
+
+.mensagens p{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.mensagens button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#248a9c;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.mensagens button:hover{
+    background-color: #1dbad6;
+    box-shadow: 0px 0px 8px #0bc2e2d3;
+    transform: scale(1.01);
+}
+
+.mensagens button span {
+    margin-left: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.mensagens button:hover span {
+    transform: translateX(15px);
+    transition: 0.5s;
+    color: #fff;
+}
+
+/* responsivo */
+
+@media only screen and (max-width: 1000px) {
+    .comeco-do-site{
+        background-image: url(imagem/Cópia\ de\ FELIX.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .comeco-do-site a{
+        display: none;
+    }
+
+    .comeco-do-site h2{
+        font-size: 35px;
+        margin-top: 100px;
+    }
+
+    .comeco-do-site p{
+        display: none;
+    }
+
+    .pagina-card{
+        display: block;
+    }
+    .cardA, .cardB{
+        height: 400px;
+        width: 100%;
+        padding: 10px 1%;
+        margin: 0;
+        transform: none;
+        
+    }
+
+    .cardA h2{
+        text-align: center;
+    
+    }
+
+    .cardA p{
+        text-align: center;
+        padding: 0 1%;
+    }
+
+    .cardB h2{
+        text-align: center;
+    
+    }
+
+    .cardB p{
+        text-align: center;
+        padding: 0 1%;
+    }
+    
+    .pagina-card i{
+        left: 43%;
+    }
+
+    .geral-eu{
+        display: block;
+        position: absolute;
+        bottom: -3100px;
+    }
+.geral-eu img{
+    height: 400px;
+}
+
+.mensagens{
+    text-align: left;
+    padding: 30px;
+}
+
+}
+
